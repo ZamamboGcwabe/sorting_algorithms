@@ -20,8 +20,7 @@ void swap(int *m, int *n)
  */
 void bubble_sort(int *array, size_t size)
 {
-	len = size;
-	size_t i;
+	size_t i, len = size;;
 	bool bubbly = false;
 
 	if (array == NULL || size < 2)
