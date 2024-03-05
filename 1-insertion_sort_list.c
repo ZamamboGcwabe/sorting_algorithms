@@ -1,12 +1,12 @@
 #include "sort.h"
 
 /**
- *swap - swaps two nodes in a doubly-linked list.
+ *swap_node - swaps two nodes in a doubly-linked list.
  *@h: pointer to the head
  *@x: pointer to the first node
  *@y: pointer to the second node
  */
-void swap(listint_t **h, listint_t **x, listint_t *y)
+void swap_node(listint_t **h, listint_t **x, listint_t *y)
 {
 	(*x)->next = y->next;
 	if (y->next != NULL)
