@@ -19,11 +19,11 @@ void swap_node(listint_t **h, listint_t **x, listint_t *y)
 	else
 		*h = y;
 	(*x)->prev = y;
-	*x = y->prev
+	*x = y->prev;
 }
 
 /**
- *insertion_sort_list - sorts a doubly linked list of 
+ *insertion_sort_list - sorts a doubly linked list of
  *integers in ascending order
  *@list: pointer to the head
  */
@@ -43,7 +43,7 @@ void insertion_sort_list(listint_t **list)
 
 		while (insert != NULL && i->n < insert->n)
 		{
-			swap(list, &insert, i);
+			swap_node(list, &insert, i);
 			print_list((const listint_t *)*list);
 		}
 	}
